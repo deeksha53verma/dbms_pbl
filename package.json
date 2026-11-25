@@ -1,0 +1,14 @@
+{
+  "name": "rotaract-rvce-dbms",
+  "version": "1.0.0",
+  "description": "Rotaract Club of RVCE - DBMS Lab Management Portal",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "reset-db": "node -e \"import('./database/db.js').then(m => { m.resetDatabase(); console.log('Database reset complete.'); })\""
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
